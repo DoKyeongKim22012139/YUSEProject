@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class OrbitProjectile : Projectile
 {
@@ -24,7 +24,6 @@ public class OrbitProjectile : Projectile
         if(other.CompareTag("Enemy"))
         {
             Monster monster = other.GetComponent<Monster>();
-            Debug.Log($"¶§¸° ³ð: {other.name} / µ¥¹ÌÁö ¼öÄ¡: {_damage}");
             monster.TakeDamage(_damage);
         }
     }
